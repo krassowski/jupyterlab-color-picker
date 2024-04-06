@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.6
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: ''
+author_name: Michał Krassowski
+data_format: string
+file_extension: ''
+has_binder: true
+has_settings: false
+kind: frontend
+labextension_name: jupyterlab-color-picker
+mimetype: ''
+mimetype_name: ''
+project_short_description: A JupyterLab color picker
+python_name: jupyterlab_color_picker
+repository: https://github.com/krassowski/jupyterlab-color-picker
+test: true
+viewer_name: ''
+
