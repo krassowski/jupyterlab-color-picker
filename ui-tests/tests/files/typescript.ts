@@ -1,3 +1,4 @@
 // CSS colors
 '#e01b24';
-'orange'`blue`;
+'orange';
+`blue`;

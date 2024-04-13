@@ -15,6 +15,8 @@ import {
 import { makeColorPicker } from './picker';
 import { discoverColorsInStrings, IDiscoveryOptions } from './discover';
 
+const defaultSettings: IDiscoveryOptions = { matplotlibTableau: true };
+
 /**
  * Initialization data for the jupyterlab-color-picker extension.
  */
@@ -36,10 +38,10 @@ const plugin: JupyterFrontEndPlugin<void> = {
     extensions.addExtension(
       Object.freeze({
         name: 'jupyterlab-color-picker',
-        default: {},
+        default: defaultSettings,
         factory: () =>
           EditorExtensionRegistry.createConfigurableExtension(
-            (settings: IDiscoveryOptions = { matplotlibTableau: true }) => {
+            (settings: IDiscoveryOptions = defaultSettings) => {
               return [
                 CSSColorPicker,
                 makeColorPicker({
