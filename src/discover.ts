@@ -120,14 +120,9 @@ export function discoverColorsInStrings(settings: IDiscoveryOptions) {
         }
         return null;
       }
-      case 'javascript': {
-        if (typeName === 'string') {
-          return discoverColor(from + 1, to - 1);
-        }
-        return null;
-      }
+      case 'javascript':
       case 'typescript': {
-        if (typeName === 'string') {
+        if (typeName === 'String' || typeName === 'TemplateString') {
           return discoverColor(from + 1, to - 1);
         }
         return null;
