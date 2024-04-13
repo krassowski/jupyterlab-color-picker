@@ -9,14 +9,14 @@ const files = [
   'typescript.ts'
 ];
 
+test.use({
+  tmpPath: 'picker-test'
+});
+
 test.describe('Color parsing', () => {
   test.beforeAll(async ({ request, tmpPath }) => {
     const contents = galata.newContentsHelper(request);
     await contents.uploadDirectory(path.resolve(__dirname, './files'), tmpPath);
-  });
-
-  test.beforeEach(async ({ page, tmpPath }) => {
-    await page.filebrowser.openDirectory(tmpPath);
   });
 
   for (let file of files) {
@@ -24,7 +24,7 @@ test.describe('Color parsing', () => {
       page,
       tmpPath
     }) => {
-      await page.notebook.openByPath(`${tmpPath}/${file}`);
+      await page.filebrowser.open(`${tmpPath}/${file}`);
       const editorLocator = page.locator(
         '.jp-FileEditorCodeWrapper .cm-content'
       );

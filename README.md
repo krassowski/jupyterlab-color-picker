@@ -3,7 +3,9 @@
 [![Github Actions Status](https://github.com/krassowski/jupyterlab-color-picker/workflows/Build/badge.svg)](https://github.com/krassowski/jupyterlab-color-picker/actions/workflows/build.yml)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krassowski/jupyterlab-color-picker/main?urlpath=lab)
 
-A JupyterLab color picker
+A JupyterLab extension adding color picker in Python, Julia, R, CSS, JavaScript and TypeScript.
+
+Based on [`@replit/codemirror-css-color-picker`](https://github.com/replit/Codemirror-CSS-color-picker).
 
 ## Requirements
 
