@@ -5,6 +5,10 @@
 
 A JupyterLab extension adding color picker in Python, Julia, R, CSS, JavaScript and TypeScript.
 
+![color picker][picker]
+
+[picker]: https://raw.githubusercontent.com/krassowski/jupyterlab-color-picker/main/docs/images/picker.png
+
 Based on [`@replit/codemirror-css-color-picker`](https://github.com/replit/Codemirror-CSS-color-picker).
 
 ## Requirements
