@@ -13,7 +13,7 @@ Based on [`@replit/codemirror-css-color-picker`](https://github.com/replit/Codem
 
 ## Requirements
 
-- JupyterLab >= 4.0.0
+- JupyterLab >= 4.0.0 or Notebook >= 7.0.0
 
 ## Install
 
